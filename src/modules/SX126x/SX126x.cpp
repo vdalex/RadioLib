@@ -854,7 +854,7 @@ int16_t SX126x::setCodingRate(uint8_t cr) {
     return(RADIOLIB_ERR_WRONG_MODEM);
   }
 
-  RADIOLIB_CHECK_RANGE(cr, 5, 8, RADIOLIB_ERR_INVALID_CODING_RATE);
+  RADIOLIB_CHECK_RANGE(cr, 4, 8, RADIOLIB_ERR_INVALID_CODING_RATE);
 
   // update modulation parameters
   this->codingRate = cr - 4;
